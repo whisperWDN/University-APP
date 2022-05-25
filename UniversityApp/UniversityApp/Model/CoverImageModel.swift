@@ -1,8 +1,8 @@
 //
 //  CoverImageModel.swift
-//  ThePlacesOfInterest
+//  UniversityApp
 //
-//  Created by admin on 2022/4/7.
+//  Created by admin on 2022/5/25.
 //
 
 import Foundation

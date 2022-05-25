@@ -1,8 +1,8 @@
 //
 //  MainView.swift
-//  ThePlacesOfInterest
+//  UniversityAPP
 //
-//  Created by admin on 2022/4/7.
+//  Created by admin on 2022/5/20.
 //
 
 import SwiftUI
@@ -15,21 +15,20 @@ struct MainView: View {
                     Image(systemName: "square.grid.2x2")
                     Text("浏览")
                 }
-            VideoListView()
+            ClassificationView()
                 .tabItem{
-                    Image(systemName: "play.rectangle")
-                    Text("视频")
+                    Image(systemName: "circle.grid.cross")
+                    Text("分类")
                 }
             MapView()
                 .tabItem{
                     Image(systemName: "map")
                     Text("位置")
-                    
                 }
-            GalleryView()
+            ContrastView()
                 .tabItem{
                     Image(systemName: "photo")
-                    Text("照片")
+                    Text("对比")
                 }
         }
     }

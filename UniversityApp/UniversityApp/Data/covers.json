@@ -1,42 +1,42 @@
 [
   {
     "id" : 1,
-    "name" : "封面-万里长城"
+    "name" : "清华大学-image"
   },
   {
     "id" : 2,
-    "name" : "封面-桂林山水"
+    "name" : "北京大学-image"
   },
   {
     "id" : 3,
-    "name" : "封面-北京故宫"
+    "name" : "浙江大学-image"
   },
   {
     "id" : 4,
-    "name" : "封面-杭州西湖"
+    "name" : "上海交通大学-image"
   },
   {
     "id" : 5,
-    "name" : "封面-苏州园林"
+    "name" : "南京大学-image"
   },
   {
     "id" : 6,
-    "name" : "封面-安徽黄山"
+    "name" : "复旦大学-image"
   },
   {
     "id" : 7,
-    "name" : "封面-长江三峡"
+    "name" : "中国科学技术大学-image"
   },
   {
     "id" : 8,
-    "name" : "封面-日月潭"
+    "name" : "华中科技大学-image"
   },
   {
     "id" : 9,
-    "name" : "封面-承德避暑山庄"
+    "name" : "武汉大学-image"
   },
   {
     "id" : 10,
-    "name" : "封面-兵马俑"
+    "name" : "西安交通大学-image"
   }
 ]

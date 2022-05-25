@@ -1,9 +1,9 @@
 //
 //  CoverImageView.swift
-//  ThePlacesOfInterest
+//  UniversityApp
 //
-//  Created by admin on 2022/4/7.
-//
+//  Created by admin on 2022/5/25.
+
 
 import SwiftUI
 
@@ -16,6 +16,7 @@ struct CoverImageView: View {
                 Image(item.name)
                     .resizable()
                     .scaledToFill()
+                    .frame(width: 350, height: 300)
             }
         }//TabView
         .tabViewStyle(PageTabViewStyle())
