@@ -19,6 +19,8 @@ struct University:Codable,Identifiable{
     let link:String
 //    主景图
     let image:String
+//  图集
+//    let gallery:[String]
 //    信息
     let message:[String]
 //    是否被收藏

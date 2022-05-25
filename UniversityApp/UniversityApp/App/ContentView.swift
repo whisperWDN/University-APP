@@ -48,9 +48,9 @@ struct ContentView: View {
               .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
             
             ForEach(universities) { university in
-////              NavigationLink(destination: PlaceDetailView(place: place)) {
+              NavigationLink(destination: UniversityDetailView(university: university)) {
                 UniversityListItemView(university: university)
-////              } //: Link
+              } //: Link
             } //: Loop
 //            CopyrightView()
 //              .modifier(CenterModifier())
