@@ -37,7 +37,7 @@ struct UniversityDetailView: View {
                 Group{
                     HeadingView(headingImage: "photo.on.rectangle.angled", headingText: "中国高校")
                         .padding(.horizontal)
-//                    InsetGalleryView(place: place)
+                    InsetGalleryView(university: university)
                 }
 
                 Group{
@@ -64,6 +64,12 @@ struct UniversityDetailView: View {
                 Group{
                     HeadingView(headingImage: "books.vertical", headingText: "了解更多")
                     ExternalWebLinkView(university: university)
+                }
+                .padding(.horizontal)
+                
+                Group{
+                    HeadingView(headingImage: "message.circle", headingText: "学生评价")
+                    InsetCommentView(university: university)
                 }
                 .padding(.horizontal)
             }
