@@ -11,6 +11,8 @@ struct ClassificationView: View {
     @State private var location:String = "华东"
     let regions :[Region]=Bundle.main.decode("regions.json")
     let universities :[University]=Bundle.main.decode("universities.json")
+    let themes:[Theme]=themeData
+    @ObservedObject var theme = ThemeSettings()
     var body: some View {
         NavigationView{
             ScrollView{
@@ -43,8 +45,9 @@ struct ClassificationView: View {
                 } //: Loop
             }
             .navigationBarHidden(true)
-
+            
         }//NavigationView
+        .accentColor(themes[self.theme.themeSettings].themeColor)
         
 
 

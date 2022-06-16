@@ -9,6 +9,8 @@ import SwiftUI
 
 struct UniversityListItemView: View {
     let university:University
+    let themes:[Theme]=themeData
+    @ObservedObject var theme = ThemeSettings()
     var body: some View {
         HStack(alignment: .center, spacing: 10){
             Image(university.logo)
@@ -21,7 +23,7 @@ struct UniversityListItemView: View {
                 Text(university.name)
                     .font(.title2)
                     .fontWeight(.heavy)
-                    .foregroundColor(.accentColor)
+                    .foregroundColor(themes[self.theme.themeSettings].themeColor)
                 
                 Text(university.headline)
                     .font(.footnote)

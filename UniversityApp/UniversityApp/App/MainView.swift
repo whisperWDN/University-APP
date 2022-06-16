@@ -25,10 +25,10 @@ struct MainView: View {
                     Image(systemName: "map")
                     Text("位置")
                 }
-            ContrastView()
+            SettingsView()
                 .tabItem{
-                    Image(systemName: "photo")
-                    Text("对比")
+                    Image(systemName: "gear")
+                    Text("设置")
                 }
         }
     }

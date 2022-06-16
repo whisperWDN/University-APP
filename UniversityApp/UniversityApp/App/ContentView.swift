@@ -11,7 +11,8 @@ struct ContentView: View {
   //MARK: - Properties
 
   let universities :[University]=Bundle.main.decode("universities.json")
-
+    let themes:[Theme]=themeData
+    @ObservedObject var theme = ThemeSettings()
   
   //MARK: - Body
   var body: some View {
@@ -21,7 +22,7 @@ struct ContentView: View {
               .frame(height: 200)
               .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
             
-            ForEach(universities) { university in
+              ForEach(universities,id:\.rank) { university in
               NavigationLink(destination: UniversityDetailView(university: university)) {
                 UniversityListItemView(university: university)
               } //: Link
@@ -32,6 +33,7 @@ struct ContentView: View {
       .navigationBarTitle("中国高校", displayMode: .large)
 
     } //: NavigationView
+    .accentColor(themes[self.theme.themeSettings].themeColor)
   }
 }
 
