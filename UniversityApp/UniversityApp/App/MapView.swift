@@ -8,7 +8,9 @@
 import SwiftUI
 import MapKit
 
+//地图视图
 struct MapView: View {
+    //默认地图焦点
     @State private var region:MKCoordinateRegion = {
         var mapCoordinates = CLLocationCoordinate2D(latitude: 30.555624412131368, longitude: 114.30381222526006)
         var mapZoomLevel = MKCoordinateSpan(latitudeDelta: 25.0, longitudeDelta: 25.0)
@@ -16,14 +18,11 @@ struct MapView: View {
         
         return mapRegion
     }()
-    
+    //学校坐标信息
     let locations:[UniversityLocation]=Bundle.main.decode("locations.json")
     var body: some View {
-//        Map(coordinateRegion: $region)
         Map(coordinateRegion: $region,annotationItems: locations){
             item in
-//            MapPin(coordinate: item.location, tint: .accentColor)
-//            MapMarker(coordinate: item.location, tint: .accentColor)
 
             MapAnnotation(coordinate: item.location){
                 MapAnnotationView(location: item)
@@ -32,10 +31,12 @@ struct MapView: View {
         }
         .overlay(
             HStack(alignment: .center, spacing: 12){
+                //校徽
                 Image("Logo")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 48, height: 48, alignment: .center)
+                //经纬度
                 VStack(alignment: .leading, spacing: 3){
                     HStack{
                         Text("经度：")

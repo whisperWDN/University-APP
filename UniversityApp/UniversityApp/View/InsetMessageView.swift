@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+//消息
 struct InsetMessageView: View {
     let university:University
     var body: some View {

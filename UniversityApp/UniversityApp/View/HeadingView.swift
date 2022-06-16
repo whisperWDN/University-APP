@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//内容显示格式
 struct HeadingView: View {
     var headingImage:String
     var headingText:String

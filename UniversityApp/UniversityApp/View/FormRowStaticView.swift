@@ -29,7 +29,7 @@ struct FormRowStaticView: View {
 
 struct FormRowStaticView_Previews: PreviewProvider {
     static var previews: some View {
-        FormRowStaticView(icon: "gear", firstText: "应用程序", secondText: "待办事项")
+        FormRowStaticView(icon: "gear", firstText: "应用程序", secondText: "大学汇")
             .previewLayout(.fixed(width: 375, height: 60))
             .padding()
     }

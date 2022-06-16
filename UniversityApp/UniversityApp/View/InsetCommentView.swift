@@ -7,7 +7,7 @@
 
 
 import SwiftUI
-
+//学生评价
 struct InsetCommentView: View {
     let university:University
     var body: some View {

@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+//浏览视图
 struct ContentView: View {
   //MARK: - Properties
 
@@ -18,15 +18,18 @@ struct ContentView: View {
   var body: some View {
     NavigationView {
           List {
+              //图集
             CoverImageView()
               .frame(height: 200)
               .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
-            
+            //大学列表
               ForEach(universities,id:\.rank) { university in
               NavigationLink(destination: UniversityDetailView(university: university)) {
                 UniversityListItemView(university: university)
               } //: Link
             } //: Loop
+              
+              //项目开发信息
             CopyrightView()
               .modifier(CenterModifier())
           } //: List

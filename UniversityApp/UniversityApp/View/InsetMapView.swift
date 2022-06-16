@@ -7,7 +7,7 @@
 
 import SwiftUI
 import MapKit
-
+//地图组件
 struct InsetMapView: View {
     @State private var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 31.574565, longitude: 108.884720),                       span:MKCoordinateSpan(latitudeDelta: 60, longitudeDelta: 60))

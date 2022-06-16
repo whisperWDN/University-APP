@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+//网页链接组件
 struct ExternalWebLinkView: View {
     let university:University
     var body: some View {

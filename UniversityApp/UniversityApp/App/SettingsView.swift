@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//设置视图
 struct SettingsView: View {
     let themes:[Theme]=themeData
     @ObservedObject var theme = ThemeSettings()
@@ -14,6 +15,8 @@ struct SettingsView: View {
 
         VStack(alignment: .center, spacing: 0){
             Form{
+                //切换主题颜色
+                //切换后需关闭应用后重启
                 Section(
                     header:
                         HStack{
@@ -39,6 +42,7 @@ struct SettingsView: View {
                 }//Section
                 .padding(.vertical,3)
                 
+                //开发者相关信息
                 Section(header:Text("关于应用程序")){
                     FormRowStaticView(icon: "gear", firstText: "应用程序", secondText: "大学汇")
                     FormRowStaticView(icon: "checkmark.seal", firstText: "兼容性", secondText: "iPhone,iPad")

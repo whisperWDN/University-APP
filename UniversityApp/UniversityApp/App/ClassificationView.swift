@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+//分类视图
 struct ClassificationView: View {
     @State private var location:String = "华东"
     let regions :[Region]=Bundle.main.decode("regions.json")
@@ -14,6 +14,7 @@ struct ClassificationView: View {
     let themes:[Theme]=themeData
     @ObservedObject var theme = ThemeSettings()
     var body: some View {
+        //依据地理分区进行分类
         NavigationView{
             ScrollView{
                 HStack{

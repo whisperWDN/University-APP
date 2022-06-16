@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//浏览视图主页显示的图集
 struct CoverImageView: View {
     let coverImages:[CoverImage]=Bundle.main.decode("covers.json")
     var body: some View {

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//详情视图的内部图集
 struct InsetGalleryView: View {
     let university:University
     var body: some View {
