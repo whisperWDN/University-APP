@@ -183,7 +183,6 @@
 			children = (
 				84096CCA283E751700645821 /* CoverImageView.swift */,
 				84096CDC283E778400645821 /* UniversityListItemView.swift */,
-				84096CE2283E843C00645821 /* UniversityDetailView.swift */,
 				84096CE4283E855500645821 /* HeadingView.swift */,
 				84096CE8283E8A9000645821 /* InsetMessageView.swift */,
 				84096CE6283E85D900645821 /* InsetGalleryView.swift */,
@@ -217,6 +216,7 @@
 				84096CC3283E737B00645821 /* MapView.swift */,
 				84096CC5283E73AA00645821 /* SettingsView.swift */,
 				84096CC7283E741A00645821 /* ClassificationView.swift */,
+				84096CE2283E843C00645821 /* UniversityDetailView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
