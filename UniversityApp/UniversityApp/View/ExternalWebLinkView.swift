@@ -13,7 +13,7 @@ struct ExternalWebLinkView: View {
         GroupBox{
             HStack{
                 Image(systemName: "globe")
-                Text("百度百科")
+                Text("学校官网")
                 Spacer()
                 Group{
                     Image(systemName: "arrow.up.right.square")
